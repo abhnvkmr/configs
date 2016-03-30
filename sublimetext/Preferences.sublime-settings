@@ -1,0 +1,38 @@
+{
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 6,
+	"caret_extra_top": 6,
+	"caret_style": "wide",
+	"color_scheme": "Packages/Materialize/schemes/Material Spaceblack.tmTheme",
+	"draw_whitespace": "all",
+	"face_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		".ini"
+	],
+	"folder_exclude_patterns":
+	[
+		".idea",
+		".git"
+	],
+	"font_face": "Hack",
+	"font_options":
+	[
+		"directwrite"
+	],
+	"font_size": 10,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"material_theme_accent_red": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"overlay_scroll_bars": "enabled",
+	"theme": "Material Spaceblack.sublime-theme",
+	"word_wrap": true
+}
