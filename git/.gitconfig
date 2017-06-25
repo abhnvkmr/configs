@@ -1,0 +1,25 @@
+[alias]
+    # Fix last commits
+    fixlast = commit --fixup
+    
+    # Undo last commit
+    pop = reset HEAD^
+    
+    # Edit last commit
+    undo = commit --amend --no-edit
+    
+    # Show just the last commit
+    last = --no-pager log -1 --oneline --color
+    
+    # Short status
+    st = status -sb
+    
+    # List all commits
+    ls = log --pretty=format:"%C(yellow)%h\\ %Creset%s%Cblue\\ [%cn]\\%Cred%d" --decorate
+    
+    # List all commits with changes
+    ln = ls --numstat
+    
+    # Show which commits can be pushed to remote without --force
+    unpushed = log @{u}..
+    
