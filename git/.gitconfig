@@ -1,4 +1,9 @@
 [alias]
+    # Shortened commands
+    cm = commit
+    co = checkout
+    ch = cherry-pick
+
     # Fix last commits
     fixlast = commit --fixup
     
@@ -19,7 +24,18 @@
     
     # List all commits with changes
     ln = ls --numstat
-    
+
     # Show which commits can be pushed to remote without --force
     unpushed = log @{u}..
+
+    # Log since yesterday
+    standup = log --since yesterday --author $(git config user.email) --pretty=short
     
+    # Mark a branch as done (Prefix done-)
+    markdone = "!f() { git branch | grep "$1" | cut -c 3- | grep -v done | xargs -I{} git branch -m {} done-{}; }; f"
+
+    # Add a file/folder to .gitignore
+    ignore = "!f() { echo \"$1\" >> .gitignore; }; f"
+
+    # Find a file in repo (Restrict grep to filenames)
+    ff = "!git ls-files | grep -i"
