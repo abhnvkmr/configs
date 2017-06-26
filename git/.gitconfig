@@ -2,16 +2,53 @@
     # Shortened commands
     cm = commit
     co = checkout
+    br = branch
+    cl = clone
     ch = cherry-pick
+
+    # Create a new branch and switch to it
+    con = checkout -b
+
+    # Branches
+    ba = branch -a
+    br = branch -r
+
+    # Fetch from remote and prune non-existing branches
+    fnp = fetch -p   
+
+    # Add hunk by hunk
+    ap = add -p
+
+    # Show word-diff
+    wdiff = diff --word-diff
+
+    # Show diff of staged changes
+    sdiff = diff --cached
+
+    # Stage all and commit
+    cmall = !git add -A && git commit -m
 
     # Fix last commits
     fixlast = commit --fixup
+
+    # Amend last commit
+    amend = commit -a --amend
     
+    # Unstage
+    unstage = reset
+    unstageh = reset --hard
+
     # Undo last commit
     pop = reset HEAD^
+    pop2 = reset HEAD^^
+    poph = reset HEAD^ --hard
+    poph2 = reset HEAD^^ --hard
     
     # Edit last commit
     undo = commit --amend --no-edit
+
+    # Add all changes to a lost commit and reset hardly
+    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
     
     # Show just the last commit
     last = --no-pager log -1 --oneline --color
@@ -24,6 +61,15 @@
     
     # List all commits with changes
     ln = ls --numstat
+
+    # Show top contributors
+    rank = shortlog -sn --no-merges
+
+    # Stash
+    stl = stash list
+    sta = stash apply
+    stp = stash pop
+    sts = stash save
 
     # Show which commits can be pushed to remote without --force
     unpushed = log @{u}..
