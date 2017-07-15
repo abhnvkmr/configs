@@ -60,7 +60,7 @@
     ls = log --pretty=format:"%C(yellow)%h\\ %Creset%s%Cblue\\ [%cn]\\%Cred%d" --decorate
     
     # List all commits with changes
-    ln = ls --numstat
+    ln = log --pretty=format:"%C(yellow)%h\\ %Creset%s%Cblue\\ [%cn]\\%Cred%d" --decorate --numstat
 
     # Show top contributors
     rank = shortlog -sn --no-merges
