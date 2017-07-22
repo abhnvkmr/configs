@@ -1,0 +1,8 @@
+# IDE/Editors
+.idea
+.vscode
+
+# System
+.directory
+.DS_Store
+desktop.ini
