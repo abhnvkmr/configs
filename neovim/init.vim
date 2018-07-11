@@ -20,7 +20,7 @@ if dein#load_state('/home/abhnv/.local/share/dein')
   call dein#add('tpope/vim-commentary')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('flazz/vim-colorschemes')
+  call dein#add('chriskempson/base16-vim')
   call dein#add('sheerun/vim-polyglot')
 
   " You can specify revision/branch/tag.
@@ -48,12 +48,14 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 " UI
 set cursorline
 set number
-colorscheme solarized
+set termguicolors
+colorscheme base16-materia
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='solarized'
+let g:airline_theme='base16_ocean'
 
 " If you want to install not installed plugins on startup.
 "if dein#check_install()
 "  call dein#install()
 "endif
+
