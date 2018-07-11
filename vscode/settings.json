@@ -1,0 +1,12 @@
+{
+    "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
+    "editor.fontSize": 18,
+    "editor.fontLigatures": true,
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.renderCharacters": false,
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "terminal.integrated.fontSize": 16,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Ayu Light"
+}
